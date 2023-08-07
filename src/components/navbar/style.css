@@ -1,0 +1,128 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam:wght@300&family=Lora&family=Manrope:wght@300&family=Mukta:wght@300&family=Noto+Serif&family=Poppins:wght@300&family=Potta+One&family=Raleway&family=Roboto+Condensed&family=Roboto:wght@300;400&family=Tangerine:wght@700&family=Tilt+Prism&display=swap');
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Lora', serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Potta One', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Tangerine', cursive;
+font-family: 'Tilt Prism', cursive;
+*/
+
+  :root {
+  --main-bg-color:  #27ffff;
+}
+*{
+
+
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+
+}
+
+.Navbar{
+	display: flex;
+	align-items: center;
+
+	box-sizing: border-box;
+	justify-content: flex-start;
+
+	background-color: rgba(0,0,0,.4)!important;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    backdrop-filter: blur(3px);
+}
+header{
+	position: relative;
+    z-index: 2;
+	
+	
+}
+.logo{
+	color: var(--main-bg-color);
+	font-size: 25px;
+	font-family: 'Potta One', cursive;
+	padding: 5px 10px;
+	margin: 10px 15px ;
+	
+}
+
+
+
+.list{
+	display: flex;
+	margin: 10px 25px;
+
+
+}
+
+.l-item{
+	list-style: none;
+	padding: 10px 15px ;
+	margin: 5px 10px;
+
+}
+.l-item a{
+	text-decoration: none;
+	color: white;
+}
+
+.l-item:hover{
+	border-bottom: 2px solid var(--main-bg-color);
+}
+.icons{
+	margin: 10px 70px;
+}
+.icons i{
+	padding: 3px 10px;
+	cursor: pointer;
+}
+
+.search-query{
+
+	transition: all 2s;
+}
+.search-query input{
+	    width: 30vw;
+    padding: 5px 10px;
+}
+.search-query button{
+	    height: 30px;
+    padding: 0px 10px;
+    color: black;
+    background: aqua;
+}
+
+.hidden{
+	opacity: 0;
+	transition: all 2s;
+}
+
+
+@media only screen and (max-width: 1500px){
+	.Navbar{
+		flex-direction: column;
+		position: static;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 500px){
+.l-item{
+	    list-style: none;
+    padding: 10px 4px;
+    margin: 5px 10px;
+    font-size: 12px;
+}
+}
